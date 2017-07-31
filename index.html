@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Twittler</title>
     <link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css">
-    <link rel="stylesheet" type="text/css" href="<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
     <script rel="jquery" src="assets/jquery/jquery.js"></script>
     <script rel="jquery" src="assets/jquery/application.js"></script>
     <script src="assets/javascript/data_generator.js"></script>
@@ -37,20 +37,17 @@
 
         <p>Let people know what you think...</p>
 
-        <textarea style="resize:none" class="textbox"></textarea>
+        <textarea id="yourtext" style="resize:none" class="textbox"></textarea>
 
-        <a class="btn btn-alt-send" >Send tweet</a>
+        <a id="sendTweet" class="btn btn-alt-send" >Send tweet</a>
 
     </section>
 
   <!-- Timeline --> 
+  <div id="userTimeline" class="hidden"></div>
+  <button id="genTweetBtn" class="btn btn-alt">Refresh Timeline</button>
 
-  <button class="btn btn-alt">See Timeline</button>
-
-  <section class="row">
-   <div class='grid'>  
-
-   </div>
+  <section id="newestTweets" class="row">
   </section>
 
   <!-- Footer -->
@@ -69,9 +66,6 @@
 
 
    </footer>
-
-
-
 
   </body>
 </html>
