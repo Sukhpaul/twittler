@@ -60,6 +60,33 @@ body {
   font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.hidden {
+  display: none;
+}
+
+#userTimeline {
+  background-color: gray;
+  width:100%;
+  padding:10px;
+  position: absolute;
+  z-index:5;
+  color:white !important;
+}
+#userTimeline a, #userTimeline a:active {
+  text-decoration:none;
+  color:white !important;
+}
+.tweet {
+  margin-bottom:15px;
+  padding-left: 12px;
+  border-bottom: 2px solid #648880;
+  padding-bottom: 15px;
+}
+
+.createdAt {
+  font-size: 10px;
+}
+
 /*
   ========================================
   Grid
@@ -162,20 +189,6 @@ cite, em {
   font-style: italic;
 }
 
- /*
-  ========================================
-  Leads
-  ========================================
-*/
-
-.lead {
-  text-align: center;
-}
-.lead p {
-  font-size: 21px;
-  line-height: 33px;
-}
-
 /*
   ========================================
   Links
@@ -210,7 +223,7 @@ p a {
 
 .btn {
   border-radius: 5px;
-  color: red;
+  color: #648880;
   cursor: pointer;
   display: inline-block;
   font-weight: 400;
@@ -336,8 +349,12 @@ p a {
 
 .textbox {
   text-align: left;
-  width: 200px; 
-  height: 100px
+  padding: 10px;
+  width: 320px; 
+  height: 50px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /*
